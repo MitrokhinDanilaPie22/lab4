@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<script>
+    let massiv = [10, 2, 30, 4, 50];
+    let k = 1;
+    let l = 3;
+    if (k<0 || l<0 || k>=massiv.length || l>=massiv.length){
+        alert("Некорректный ввод")
+    }else{
+        for(let i=k, j=l; i<j;i++,j--){
+            let temp = massiv[i];
+            massiv[i] = massiv[j];
+            massiv[j] = temp;
+        }
+    alert(massiv);
+    }
+</script>
+</body>
+</html>
